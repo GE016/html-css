@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus sites</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+            padding: 2px;
+            height: 3em;
+            width: 15em;
+            border-color: black;
+            border-style: dashed;
+            margin: 2em;
+            outline: 2px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{color: darkred;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:visited{
+                        
+        }
+        a:active{
+            color: blue;
+        }
+        .especial{
+            background-color: aqua;
+        }
+        
+        .especial::before{
+            content: '\00BB';
+            color: red;
+        }
+
+            
+        .especial::after {
+            content: '\00AB';
+            text-decoration: none;
+            font-weight: normal;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+    <li class="especial"><a href="https://www.youtube.com/@agroensino7253" target="_blank">Canal do You Tube</a></li>
+</ul>
+</body>
+</html>
